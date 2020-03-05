@@ -1,6 +1,6 @@
 /* Import faunaDB sdk */
 const faunadb = require('faunadb')
-
+console.log(process.env)
 const q = faunadb.query
 const client = new faunadb.Client({
   secret: process.env.FAUNADB_SERVER_SECRET
